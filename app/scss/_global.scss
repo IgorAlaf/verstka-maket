@@ -1,0 +1,90 @@
+html,
+body {
+	height: 100%;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #5A5A5A;
+	overflow-x: hidden;
+	line-height: 169%;
+	min-width: 320px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+*, a:focus {
+    outline: none !important;
+
+}
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-fluid{
+	max-width:1900px;
+	margin:0 auto;
+	padding:0 25px;
+}
+
+
+.slick-dots{
+	display: flex;
+	justify-content: center;
+	li{
+		margin:0 15px;
+	}
+	button{
+		width: 8px;
+		height: 8px;
+		cursor: pointer;
+		border:none;
+		background-color: $title-color;
+		font-size: 0;
+		padding: 0;
+		border-radius: 50%;
+	}
+	.slick-active{
+		button{
+			background-color: #FFEF35;
+			
+		}
+	}
+}
+
+.contact-mail{
+	display: inline-block;
+        font-size: 14px;
+		padding-left:30px;
+        font-weight: 600;
+        line-height: 200%;
+        color:$title-color;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/envelope.svg');
+            left:0;
+            top:8px;
+            width:16px;
+            height:12px;
+            object-fit: cover;
+        }
+}
+
+
+
+
